@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Analysis Project</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="center-text">Movie Analysis Project</h1>
+    
+
+    <h2>Overview</h2>
+    <p>
+        This project aims to analyze and gain insights from a dataset containing information about movies. It utilizes Python, various data analysis libraries, and data visualization techniques to explore the dataset and answer questions related to movie revenue, budgets, ratings, and more.
+    </p>
+
+    <h2>Tasks</h2>
+    <ul>
+        <li>
+            <h3>Data Import and Overview</h3>
+            <ul class="list-content">
+                <li>Import the necessary Python libraries for data analysis and visualization.</li>
+                <li>Read the movie data from a CSV file.</li>
+                <li>Check for missing data in the dataset.</li>
+                <li>Display the data types of each column.</li>
+            </ul>
+            <img class="center-image" src="images\Capture1.png" alt="import">
+        </li>
+        <li>
+            <h3>Data Exploration and Visualization</h3>
+            <ul class="list-content">
+                <li>Visualize potential outliers in the 'gross' column using a box plot.</li>
+                <img class="center-image" src="images\Outlier.png" alt="outlier">
+                <li>Remove duplicate rows from the dataset.</li>
+                <li>Sort the data by 'gross' in descending order.</li>
+                <li>Create scatter plots to examine the relationships between 'gross' and 'budget,' as well as 'score' and 'gross.'</li>
+            </ul>
+            
+        </li>
+        <li>
+            <h3>Correlation Analysis</h3>
+            <ul class="list-content">
+                <li>Calculate correlation matrices using different methods (Pearson, Kendall, and Spearman) to explore relationships between numeric columns.</li>
+                <li>Visualize the correlation matrices using heatmaps.</li>
+                <li>Perform correlation analysis for categorical data, converting categorical columns to numerical values.</li>
+                <li>Visualize the correlation matrix for the entire dataset.</li>
+            </ul>
+            <img class="center-image" src="images\numericalmatrix.png" alt="Numericalmatrix">
+        </li>
+        <li>
+            <h3>Exploring Categorical Correlations</h3>
+            
+            <ul class="list-content">
+                <li>Analyze correlations between categorical variables in the dataset.</li>
+                <li>Identify and display pairs of variables with high correlations.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Company and Revenue Analysis</h3>
+            <ul class="list-content">
+                <li>Analyze the top 15 movie production companies by gross revenue.</li>
+                <li>Group and analyze gross revenue by company and year.</li>
+                <li>Group and analyze gross revenue by company.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Budget vs. Gross Visualization</h3>
+            <ul class="list-content">
+                <li>Create a scatter plot to visualize the relationship between movie budgets and gross earnings.</li>
+            </ul>
+            <img class="center-image" src="images\scatterplot.png" alt="scatter Graph">
+        </li>
+        <li>
+            <h3>Data Preparation for Correlation Analysis</h3>
+            <ul class="list-content">
+                <li>Convert categorical columns to numerical values for correlation analysis.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Final Correlation Matrix Visualization</h3>
+            <ul class="list-content">
+                <li>Calculate and visualize the correlation matrix for the dataset after data preparation.</li>
+            </ul>
+            <img class="center-image" src="images\correlationmatrix.png" alt="Correlation Graph">
+        </li>
+        <li>
+            <h3>Rating and Gross Visualization</h3>
+            <ul class="list-content">
+                <li>Create swarm and strip plots to visualize the relationship between movie ratings and gross earnings.</li>
+            </ul>
+            <img class="center-image" src="images\swarm1.png" alt="swarm1">
+            <img class="center-image" src="images\swarm2.png" alt="swarm2">
+            
+        </li>
+    </ul>
+
+    <h2>Project Outcome</h2>
+    <p>
+        The project aims to provide insights into the relationships between various factors such as budget, rating, and production company with the gross revenue of movies. It uses data analysis techniques and visualizations to help stakeholders make informed decisions related to the movie industry, such as identifying successful production companies, understanding the impact of budgets on earnings, and exploring the relationship between ratings and revenue.
+    </p>
+
+    <p><strong>Note:</strong> The actual project may involve further analysis, interpretation of findings, and potentially drawing conclusions or making recommendations based on the insights gained from the data analysis.</p>
+    <p>
+        View the code on GitHub: 
+        <a href="https://github.com/wburlat/Movie_analysis" target="_blank" rel="noopener noreferrer">Movie Analysis Project</a>
+    </p>
+</body>
+</html>

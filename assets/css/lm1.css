@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 5px solid #FF4500; /* Add a border to the body element */
+    padding: 50px; /* Add padding for better visual appearance */
+}
+
+
+h1, h2, h3 {
+    color: white;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ol {
+    counter-reset: section;
+}
+
+li {
+    margin: 0 auto 0;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+strong {
+    color: #FF4500; /* Custom color for "Note:" */
+}
+
+.center-text {
+    text-align: center;
+}

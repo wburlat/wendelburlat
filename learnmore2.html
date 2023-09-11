@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Analysis Project</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="center-text">Loan Analysis Project</h1>
+    
+    
+
+    <h2>Overview</h2>
+    <p>
+         This project is dedicated to exploring various aspects of loans, including applicant profiles, credit scores, interest rates, and income levels. By harnessing data analysis and visualization, the project seeks to provide a detailed understanding of factors influencing loan approval decisions.
+</p>
+
+    <h2>Tasks</h2>
+    <ul>
+        <li>
+            <h3>Data Import and Overview</h3>
+            <ul class="list-content">
+                <li>Import essential Python libraries for data manipulation and visualization.</li>
+                <li>Load loan applicant data from an external source.</li>
+                <li>Check and address any missing data to ensure data quality.</li>
+                <li>Examine the data structure, including data types and column information.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Data Exploration and Visualization</h3>
+            <ul class="list-content">
+                <li>Visualize the distribution of FICO scores using appropriate graphs.</li>
+                
+                <li>Detect and handle any duplicate records within the dataset.</li>
+                <li>Sort the data by different criteria, such as credit score or income.</li>
+                <li>Generate scatter plots to investigate relationships between variables like credit score, income, and loan amount.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>FICO Score Analysis</h3>
+            <ul class="list-content">
+                <li>Create a function to categorize FICO scores into meaningful categories (e.g., 'Excellent,' 'Good,' 'Fair,' 'Poor,' 'Very Poor').</li>
+                <img class="center-image" src="images\ficcofunction.png" alt="score bar graph">
+                <li>Apply the FICO score categorization function to generate a new 'Fico_category' column.</li>
+                <img class="center-image" src="images\Ficco.png" alt="score bar graph">
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Interest Rate Classification</h3>
+            <ul class="list-content">
+                <li>Develop a function to classify interest rates as 'High' or 'Low' based on a predefined threshold.</li>
+                <li>Apply the interest rate classification function to create an 'int.rate.type' column.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Income Transformation</h3>
+            <ul class="list-content">
+                <li>Calculate annual income based on the provided logarithmic data and round the values.</li>
+                <li>Create an 'annual_income' column to store the calculated annual income values.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Categorical Data Analysis</h3>
+            <ul class="list-content">
+                <li>Analyze the distribution of loan purposes and visualize the results.</li>
+                <img class="center-image" src="images\pupose.png" alt="porpose bar graph">
+                <li>Explore correlations between categorical variables within the dataset.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Loan Data Export</h3>
+            <ul class="list-content">
+                <li>Save the cleaned and enhanced dataset to a CSV file for future analysis and Tableau reporting.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Data Visualization on Tableau</h3>
+            <ul class="list-content">
+                <li>Export the dataset to create an interactive dashboard on Tableau.</li>
+                <img class="center-image" src="images\loantable.png" alt="tableau">
+            </ul>
+        </li>
+        
+    </ul>
+
+    <h2>Project Outcome</h2>
+    <p>
+        The Loan Analysis Project aims to shed light on critical aspects of loan approval processes by examining applicant data from various angles. By applying data analysis techniques and effective visualizations, the project helps stakeholders understand the role of credit scores, interest rates, and income in loan approval decisions. 
+        It provides insights into the distribution of FICO scores, categorizes loans based on interest rates, and calculates annual income to enrich the dataset.
+    </p>
+
+    <p><strong>Note:</strong> This project contributes to informed decision-making within the lending industry, enabling financial institutions to better assess risk, streamline loan approval processes, and tailor offerings to applicant profiles.</p>
+    <p>
+        View the code on GitHub: 
+        <a href="https://github.com/wburlat/loan_analysis" target="_blank" rel="noopener noreferrer">Loan Analysis Project</a>
+        
+       
+    </p>
+    <p>
+        
+        View the Tableau Visualization on GitHub: 
+        <a href="https://github.com/wburlat/loan_analysis/blob/main/LoanAnalysis.twb" target="_blank" rel="noopener noreferrer">Tableau report file</a>
+    </p>
+</body>
+</html>

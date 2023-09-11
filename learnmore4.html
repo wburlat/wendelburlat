@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment and Keyword Analysis Project</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Sentiment and Keyword Analysis Project</h1>
+    </div>
+    
+    
+
+    <h2>Overview</h2>
+    <p>
+        The Sentiment and Keyword Analysis Project is a data analysis endeavor that focuses on understanding sentiments and identifying keywords in textual data, 
+        such as articles or blog titles. Using Python, NLTK (Natural Language Toolkit), and VADER (Valence Aware Dictionary and sEntiment Reasoner), 
+        this project delves into sentiment analysis and keyword identification to extract valuable insights from text data. 
+        It serves as a powerful tool for content analysis, market research, and understanding public sentiment.</p>
+
+    <h2>Tasks</h2>
+    <ul>
+        <li>
+            <h3>Data Import and Overview</h3>
+            <ul>
+                <li>Import necessary libraries, including NLTK.</li>
+                <li>Load textual data from an external source, such as an Excel file.</li>
+                <li>Examine the structure of the dataset, including data types and column information.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Sentiment Analysis</h3>
+            <ul>
+                <li>Utilize VADER sentiment analysis to assess the sentiment of individual text entries.</li>            
+                <li>Calculate sentiment scores, including negative, positive, and neutral sentiments, for each entry.</li>
+                <li>Store sentiment scores as new columns in the dataset.</li>
+                <li>Visualize and analyze sentiment trends in the dataset.</ul>
+                
+        </li>
+        <img class="center-image" src="images\vader.png" alt="vader">
+        
+        
+        <li>
+            <h3>Keyword Identification</h3>
+            <ul>
+                <li>Define a function to flag text entries containing specific keywords or phrases.</li>
+                <li>Flag text entries based on the presence of keywords.</li>
+                <li>Add the keyword flag as a new column in the dataset</li>
+                <li>Analyze and visualize the prevalence of flagged keywords in the dataset.
+</li>
+                <img class="center-image" src="images\sentiment.png" alt="sentiment">
+            </ul>
+        </li>
+        <li>
+            <h3>Data Export</h3>
+            <ul>
+                <li>Save the analyzed dataset, including sentiment scores and keyword flags, to a file for further analysis or reporting.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Data Visualization on Tableau</h3>
+            <ul>
+                <li>Export the dataset to create an interactive dashboard on Tableau.</li>
+                <img class="center-image" src="images\table.png" alt="vader">
+            </ul>
+        </li>
+        
+    </ul>
+
+    <h2>Project Outcome</h2>
+    <p>
+        The Sentiment and Keyword Analysis Project empowers users to gain insights from textual data. By conducting sentiment analysis, it helps understand the emotional tone of text entries, providing valuable information for market research, brand reputation analysis, and content optimization. Additionally, the keyword identification aspect aids in identifying relevant topics or trends within the text data, enhancing content curation and understanding user interests.</p>
+
+    <p><strong>Note:</strong> This project contributes to informed decision-making within the sales and marketing domains, supporting organizations in achieving their sales targets, increasing profitability, and enhancing customer satisfaction. Please note that further analysis, interpretation of findings, and recommendations based on the insights gained from this project may be necessary in a real-world scenario.</p>
+    <p>
+        View the code on GitHub: 
+        <a href="https://github.com/wburlat/keyword_sentiment_analysis" target="_blank" rel="noopener noreferrer">Sales Analysis Project</a>
+        
+       
+    </p>
+    <p>
+        
+        View the Tableau Visualization on GitHub: 
+        <a href="https://github.com/wburlat/keyword_sentiment_analysis/blob/main/Blogme.twb" target="_blank" rel="noopener noreferrer">Tableau report file</a>
+    </p>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analysis Project</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="center-text">Sales Analysis Project</h1>
+    
+    
+
+    <h2>Overview</h2>
+    <p>
+        This project is dedicated to gaining insights into various aspects of sales, including revenue, costs, profits, and key performance indicators (KPIs). By leveraging data analysis and visualization, the project aims to provide a detailed understanding of sales trends, identify growth opportunities, and optimize business strategies.
+</p>
+
+    <h2>Tasks</h2>
+    
+    <ul>
+        <li>
+            <h3>Data Import and Overview</h3>
+            <ul class="list-content">
+                <li>Import essential Python libraries for data manipulation and visualization.</li>
+                <li>Load sales data from an external source, such as a CSV file or database.</li>
+                <li>Check and handle any missing or inconsistent data to ensure data integrity.</li>
+                <li>Examine the structure of the dataset, including data types, column names, and descriptive statistics.
+</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Data Exploration and Visualization</h3>
+            <ul class="list-content">
+                <li>Visualize key sales metrics, such as revenue, costs, and profits, using appropriate charts and graphs.</li>
+                
+                <li>Detect and address any duplicate records within the dataset.</li>
+                <li>Sort and filter the data to explore sales trends by different criteria, such as time periods or product categories.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Key Performance Indicators (KPIs) Analysis</h3>
+            <ul class="list-content">
+                <li>Calculate and visualize important KPIs, such as gross profit margin, return on investment (ROI), or customer acquisition cost (CAC)</li>
+                <li>Develop trend analysis to identify patterns and fluctuations in sales performance over time.</li>
+                
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Product or Category Analysis</h3>
+            <ul class="list-content">
+                <li>Analyze sales performance by product or product category, identifying top-selling items </li>
+                <li>Visualize product sales trends and seasonality using time series analysis.</li>
+                <li>Explore pricing strategies and their impact on sales and profitability.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Income Transformation</h3>
+            <ul class="list-content">
+                <li>Calculate annual income based on the provided logarithmic data and round the values.</li>
+                <li>Create an 'annual_income' column to store the calculated annual income values.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Customer Analysis</h3>
+            <ul class="list-content">
+                <li>Segment customers based on purchase behavior, demographics, or location.</li>
+                
+                <li>Calculate customer lifetime value (CLV) and customer retention rates.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Sales Data Export</h3>
+            <ul class="list-content">
+                <li>Save the cleaned and enriched sales data to a CSV file or database for future analysis, reporting, or integration with other systems.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Data Visualization on Tableau</h3>
+            <ul class="list-content">
+                <li>Export the dataset to create an interactive dashboard on Tableau.</li>
+                <img class="center-image" src="images\salestable.png" alt="porpose bar graph">
+            </ul>
+           
+        </li>
+        
+    </ul>
+
+
+
+
+    <h2>Project Outcome</h2>
+    <p>
+        The Sales Analysis Project aims to provide valuable insights into sales operations and performance. By applying data analysis techniques and effective visualizations, the project enables stakeholders to make data-driven decisions, optimize pricing and marketing strategies, and improve overall sales efficiency. It helps businesses identify strengths and weaknesses, seize growth opportunities, and adapt to changing market conditions.</p>
+
+    <p><strong>Note:</strong> This project contributes to informed decision-making within the sales and marketing domains, supporting organizations in achieving their sales targets, increasing profitability, and enhancing customer satisfaction. Please note that further analysis, interpretation of findings, and recommendations based on the insights gained from this project may be necessary in a real-world scenario.</p>
+    <p>
+        View the code on GitHub: 
+        <a href="https://github.com/wburlat/Sales_analysis" target="_blank" rel="noopener noreferrer">Sales Analysis Project</a>
+        
+       
+    </p>
+    <p>
+        
+        View the Tableau Visualization on GitHub: 
+        <a href="https://github.com/wburlat/Sales_analysis/blob/main/Sales_Analysis%20Tableau.twb" target="_blank" rel="noopener noreferrer">Tableau report file</a>
+    </p>
+</body>
+</html>
