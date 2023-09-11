@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report: Titanic Dataset Analysis</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Project Report: Titanic Dataset Analysis</h1>
+    </div>
+    
+    
+
+    <h2>Executive Summary</h2>
+    <p>
+        This project aimed to analyze the Titanic passenger dataset to gain insights into factors influencing survival rates. We conducted extensive data exploration, data cleaning, 
+        and feature engineering to prepare the data for analysis. We then built a predictive machine learning model to estimate passenger survival. Here are the key findings and insights:</p>
+
+    <h2>Key Findings and Insights</h2>
+    <ul>
+        <li>
+            <h3>Demographic Insights:</h3>
+            <ul>
+                
+
+                <li>Age and Gender: The majority of passengers were young adults. More males were on board than females.</li>
+                <li>Most passengers were in third class (lower class), followed by first and second class.</li>
+                
+                
+            </ul>
+        </li>
+        
+        <li>
+            <h3>Survival Rate Analysis</h3>
+            <ul>
+                <li>Overall Survival Rate: The overall survival rate was approximately 38%.  </li> 
+                <li>Passenger Class: First-class passengers had the highest survival rate, followed by second class, and third class.</li>
+                <li>Gender: Females had a significantly higher survival rate compared to males.</li>
+                <li>Age Groups: Infants and children had higher survival rates than adults.</li>
+                <li>Embarkation Port: Passengers who boarded at Cherbourg (C) had a higher survival rate compared to other ports.</li>
+                         
+                
+                
+        </li>        
+    </ul>
+    <li>
+            <h3>Family Relationships</h3>
+            <ul>               
+                <li>Family Size: Passengers with small family sizes (1-3 members) had a higher survival rate than those traveling alone or with larger families.</li>
+                <li>Traveling Alone: Passengers traveling alone had a lower survival rate compared to those with family members on board.</li>
+                
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Fare Analysis</h3>
+            <ul>               
+                <li>Fare Distribution: Most passengers paid lower fares, but there was a wide range of fares.</li>
+                <li>Passenger Class: First-class passengers paid significantly higher fares on average than second and third-class passengers.</li>
+                
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Cabin Investigation
+</h3>
+            <ul>               
+                <li>Limited Cabin Information: The dataset had limited cabin information, with many missing values in the 'Cabin' column.</li>
+                <li>Survival Rate: Passengers with cabin information did not show a significant difference in survival rate compared to those without.</li>
+                
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Machine Learning Model
+</h3>
+            <ul>               
+                <li>We built a predictive logistic regression model to estimate passenger survival based on selected features.
+The model achieved a perfect accuracy score of 1.00, making no prediction errors on the test dataset.
+The precision, recall, and F1-Score for both survival and non-survival classes were 1.00, indicating a balanced and accurate model.</li>
+                
+                
+                
+            </ul>
+        </li>
+
+    <h2>Recommendations</h2>
+    <p>
+       Based on our analysis, we recommend considering passenger class, gender, and age as important factors when making predictions or inferences related to survival on the Titanic.
+Future analysis could explore more detailed cabin data if available and its impact on survival rates. In conclusion, our analysis of the Titanic dataset revealed significant insights into the factors affecting passenger survival. Our machine learning model demonstrated exceptional predictive accuracy. These findings can be valuable for understanding historical events and serve as a foundation for more complex analyses in the future.</p>
+
+    
+        View the code on GitHub: 
+        <a href="https://github.com/wburlat/TitanicAnalysis/blob/main/Analyzing_Titanic_Passenger_Data_A_Data_Analyst_Project.ipynb" target="_blank" rel="noopener noreferrer">Titanic Analysis  Project</a>
+        
+       
+    </p>
+   
+</body>
+</html>

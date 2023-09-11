@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyzing Titanic Passenger Data</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+	    .button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		background-color: transparent;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 300;
+		height: 3em;
+		line-height: 3em;
+		padding: 0 2.25em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		
+        
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Analyzing Titanic Passenger Data</h1>
+    </div>
+    
+    
+
+    <h2>Overview</h2>
+    <p>
+        The sinking of the Titanic is one of the most well-known maritime disasters in history, and the passenger data from that tragic event has provided valuable insights into survival factors.
+         In this data analyst project, we will dive into the Titanic passenger dataset to analyze and uncover patterns, correlations, and insights that shed light on the factors that influenced passenger survival. 
+        By applying data analysis techniques, statistical methods, and visualization, we aim to provide a comprehensive understanding of the Titanic's passengers and their fates.</p>
+
+    <h2>Objectives:</h2>
+    <ul>
+        <li>
+            <h3>Data Exploration and Cleaning:</h3>
+            <ul>
+                
+
+                <li>Conduct a thorough exploration of the Titanic passenger dataset.</li>
+                <li>Handle missing data, outliers, and any data inconsistencies.</li>
+                
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Survival Rate Analysis</h3>
+            <ul>
+                <li>Calculate the overall survival rate of passengers.</li>            
+                <li>Break down survival rates by different categories such as passenger class, gender, age groups, and embarkation port.</li>
+                
+        </li>
+        <img class="center-image" src="images\survivalrate.png" alt="vader">
+        
+        
+        <li>
+            <h3>Demographic Insights:</h3>
+            <ul>
+                <li>Analyze the demographic distribution of passengers, including age and gender.</li>
+                <li>Determine the average age of passengers and its variation across different groups.</li>
+               
+                <img class="center-image" src="images\averageage.png" alt="sentiment">
+            </ul>
+        </li>
+        <li>
+            <h3>Family Relationships:</h3>
+            <ul>
+                <li>Investigate family relationships by analyzing the number of siblings/spouses (SibSp) and parents/children (Parch) on board.</li>
+                <li>Determine if having family members on board affected survival rates.</li>
+                <img class="center-image" src="images\suvrate.png" alt="vader">
+            </ul>
+        </li>
+        <li>
+            <h3>Fare Analysis</h3>
+            <ul>
+                <li>Examine the distribution of ticket fares.</li>
+                <li>Compare fare distributions across passenger classes.</li>
+                
+                <img class="center-image" src="images\fare.png" alt="vader">
+            </ul>
+        </li>
+        <li>
+            <h3>Cabin Investigation</h3>
+            <ul>
+                <li>Explore the distribution of passengers across cabins.</li>
+                <li>Determine if passengers with cabin information had a different survival rate.</li>
+            </ul>
+        </li>
+        
+        <li>
+            <h3>Embarkation Port Analysis</h3>
+            <ul>
+                <li>Analyze how embarkation ports (Cherbourg, Southampton, Queenstown) relate to passenger demographics and survival rates.</li>
+                
+            </ul>
+        </li>
+         <li>
+            <h3>Name Analysis</h3>
+            <ul>
+                <li>Extract titles from passenger names (e.g., Mr., Mrs., Miss) and analyze their distribution.</li>
+                <li>Investigate if passengers with specific titles had a different chance of survival.</li>
+                
+            </ul>
+        </li>
+         <li>
+            <h3>Correlation Analysis</h3>
+            <ul>
+                <li>Calculate correlations between various features to identify relationships.</li>
+                <li>Explore how different factors are correlated with each other and with survival.</li>
+                <img class="center-image" src="images\cor1.png" alt="vader">
+                <img class="center-image" src="images\cor2.png" alt="vader">
+                
+            </ul>
+        </li>
+         <li>
+            <h3>Machine Learning Model</h3>
+            <ul>
+                <li>Build a predictive model to estimate passenger survival based on selected features.</li>
+                
+                 <img class="center-image" src="images\model.png" alt="vader">
+                <li>Evaluate model performance using appropriate metrics.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Visualization</h3>
+            <ul>
+                <li>Create meaningful visualizations (e.g., histograms, bar charts, scatter plots) to illustrate key findings and insights.</li>
+                
+            </ul>
+        </li>
+        
+    </ul>
+
+    <h2>Project Report</h2>
+    <p>
+        Summarize the project's findings, insights, and any patterns or trends discovered.
+Present results in a clear and accessible manner.</p>
+        
+        <li><a href="projectreport.html" class="button">See the result</a></li>
+
+    
+       
+       
+    </p>
+   
+</body>
+</html>
