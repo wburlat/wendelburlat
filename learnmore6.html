@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Global Happiness 2019</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+	    .button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		background-color: transparent;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 300;
+		height: 3em;
+		line-height: 3em;
+		padding: 0 2.25em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+		
+        
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1> Global Happiness 2019</h1>
+    </div>
+    
+    
+
+    <h2>Overview</h2>
+    <p>
+        This data analysis project aims to explore and understand the factors influencing global happiness. Using the World Happiness Report dataset, we will investigate the relationships between various socio-economic, environmental, and cultural factors and the happiness levels of different countries or regions. 
+        The goal is to gain insights into what contributes to happiness on a global scale and provide meaningful recommendations based on our findings.</p>
+
+    <h2>Objectives:</h2>
+    <ul>
+        <li>
+            <h3>Data Exploration and Cleaning:</h3>
+            <ul>
+                
+
+                <li>We will begin by exploring the World Happiness Report dataset, examining the variables, and gaining a comprehensive understanding of the data's structure and content.</li>
+                <li>We will clean and preprocess the data, handling missing values and outliers, and ensuring that it's ready for analysis.</li>
+                
+                
+            </ul>
+        </li>
+        <li>
+            <h3>Descriptive Analysis</h3>
+            <ul>
+                <li>We will perform descriptive statistics to summarize the data and generate initial insights into happiness scores, distribution, and trends over time.</li> 
+                <img class="center-image" src="images\hapiness\stat.png" alt="Stat Report">           
+                <li>Break down survival rates by different categories such as passenger class, gender, age groups, and embarkation port.</li>
+                <img class="center-image" src="images\hapiness\distribution.png" alt="Stat Report"> 
+        </li>
+        
+        
+        
+        
+            <h3>Correlation Analysis</h3>
+            <ul>
+                <li>We will analyze the relationships between happiness scores and various factors such as GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption.</li>
+               
+               
+                <img class="center-image" src="images\hapiness\correlation.png" alt="">
+            </ul>
+        
+       
+            <h3>Visualization</h3>
+            <ul>
+                <li>We will create visual representations of the data, including scatter plots, bar charts, heatmaps, and geographic maps, to present our findings effectively.</li>
+                
+                
+            </ul>
+        
+       
+            <h3>Predictive Modeling</h3>
+            <ul>
+                <li>We will explore the possibility of building predictive models to estimate happiness scores based on selected features. </li>
+                <li>Machine learning algorithms such as regression and decision trees may be employed for this purpose
+</li>             <li>Plot the regression vs actual data.</li> 
+                <img class="center-image" src="images\hapiness\predict.png" alt="">
+                <img class="center-image" src="images\hapiness\actualversuspredict.png" alt="">
+            </ul>
+        
+       
+            <h3>Regional and Cultural Analysis</h3>
+            <ul>
+                <li>We will investigate regional patterns and cultural influences on happiness using Elbow method. </li>
+                <img class="center-image" src="images\hapiness\elbow.png" alt="">
+                <li>This may involve clustering countries based on similarities in happiness determinants.</li>
+                <img class="center-image" src="images\hapiness\cluster.png" alt="">
+            </ul>
+        
+        
+        
+        
+        
+        
+    </ul>
+
+    <h2>Project Report</h2>
+    <p>
+        Summarize the project's findings, insights, and any patterns or trends discovered.
+Present results in a clear and accessible manner.</p>
+        
+        <li><a href="projectreport1.html" class="button">See the result</a></li>
+
+    
+       
+       
+    </p>
+   
+</body>
+</html>

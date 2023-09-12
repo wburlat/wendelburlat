@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report: Global Happiness 2019</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="center-text">
+        <h1>Project Report: Global Happiness 2019</h1>
+    </div>
+    
+    
+
+    <h2>Executive Summary</h2>
+    <p>
+        This project aimed to analyze the Happines ranking dataset to gain insights into factors influencing hapiness score. We conducted extensive data exploration, data cleaning, 
+        and feature engineering to prepare the data for analysis. We then built a predictive machine learning model to estimate hapiness score. Here are the key findings and insights:</p>
+
+    <h2>Key Findings and Insights</h2>
+    <ul>
+        <li>
+            <h3>Data Overview:</h3>
+            <ul>
+                
+
+                <li>The dataset consists of happiness scores and various factors for 156 countries or regions.</li>
+                <li>Key variables include GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity, and perceptions of corruption.</li>
+                <li>There are no missing values in the dataset, indicating good data quality.</li>
+                
+            </ul>
+        </li>
+        
+        <li>
+            <h3>Happiness Scores</h3>
+            <ul>
+                <li>Happiness scores exhibit a distribution ranging from approximately 2.853 to 7.769, with a mean score of around 5.43. </li> 
+                <li>Some countries have significantly higher happiness scores than others, indicating substantial variation in global happiness levels.</li>
+                
+                
+                
+        </li>        
+    </ul>
+    <li>
+            <h3>Distribution of Factors:</h3>
+            <ul>               
+                <li>GDP per capita varies widely among countries, with some having exceptionally high values.</li>
+                <li>Social support, healthy life expectancy, and freedom to make life choices also exhibit significant variability.</li>
+                <li>Generosity and perceptions of corruption show relatively narrower distributions.</li>
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Correlation Between Factors:</h3>
+            <ul>               
+                <li>GDP per capita and healthy life expectancy are positively correlated with happiness scores, suggesting that economic and health factors play a role in happiness.</li>
+                <li>Social support and freedom to make life choices also show strong positive correlations with happiness.</li>
+                <li>Generosity and perceptions of corruption exhibit weaker correlations with happiness.</li>
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Geographic Variation
+</h3>
+            <ul>               
+                <li>Visualizations reveal regional patterns, with Scandinavian and Northern European countries generally having higher happiness scores.</li>
+                <li>Some regions, such as Sub-Saharan Africa, tend to have lower happiness scores on average.</li>
+                
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Outliers
+</h3>
+            <ul>               
+                <li>There are a few outliers in GDP per capita, indicating countries with exceptionally high or low economic prosperity.</li>
+                <li>These outliers may skew the correlation analysis and should be considered when building predictive models.</li>
+                
+                
+            </ul>
+        </li>
+    <li>
+            <h3>Potential for Predictive Modeling
+</h3>
+            <ul>               
+                <li>The data exploration phase suggests that predictive modeling to estimate happiness scores is feasible, given the strong correlations between certain factors and happiness.</li>
+                
+                
+                
+            </ul>
+        </li>
+
+    <h2>Recommendations</h2>
+    <p>
+       Based on our analysis, To enhance overall well-being and happiness, countries should focus on several key areas. 
+       Firstly, prioritizing economic development through sustainable growth, job creation, and income equality is essential. Investing in robust social support systems,
+        including healthcare and education, ensures that citizens have access to essential services, contributing to their well-being. Furthermore, 
+        governments should promote freedom and autonomy by protecting individual rights and personal freedoms. Addressing corruption through anti-corruption measures and transparency 
+        efforts is crucial for building trust in institutions. Finally, recognizing regional disparities and tailoring policies to address specific regional challenges is essential for meaningful improvements in happiness levels.
+    
+        
+    </p>
+    <h2>Conclusion</h2>
+    <p>
+       In conclusion, the analysis of the World Happiness Report dataset underscores the critical role that economic development, social support, personal freedom, and transparency play in determining happiness levels. Countries should prioritize sustainable economic growth, bolster social support systems, and protect individual rights to foster well-being. Tackling corruption and addressing regional disparities are also vital steps towards enhancing happiness. Investments in education, healthcare, and mental health services, along with a focus on environmental sustainability and work-life balance, contribute to overall life satisfaction.
+    </p>
+    View the code on GitHub: 
+        <a href="https://github.com/wburlat/Global_Happiness_analysis/blob/main/Understanding_Global_Happiness_2019.ipynb" target="_blank" rel="noopener noreferrer">Global Happiness Analysis  Project</a>
+        
+       
+   
+</body>
+</html>
