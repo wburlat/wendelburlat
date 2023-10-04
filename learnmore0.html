@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO Visualization Data Project</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            border: 5px solid #FF4500; /* Add a border to the body element */
+            padding: 100px; /* Add padding for better visual appearance */
+        }
+        img {
+           height: 50vh; /* This centers vertically in the viewport; adjust as needed */
+            width: 50%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #ff6d00;
+        }
+
+        ol {
+            counter-reset: section;
+        }
+
+
+        li {
+            margin: 0.5em 0;
+            list-style: none;
+        }
+
+        p {
+            margin: 0.5em 0;
+            color: #ffef9f;
+
+        }
+
+        strong {
+            color: #FF4500; /* Custom color for "Note:" */
+        }
+        
+        ul > li {
+            color: #ffef9f;
+        }
+        
+        .center-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+        li > ul > li {
+            list-style: square;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .image {
+            width: 48%; /* You can adjust the width as needed */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="center-text">NEO Visualization Data Project</h1>
+    
+
+    <h2>Overview</h2>
+    <p>
+        The "NEO Visualization Data Project" aims to visualize and analyze data related to Near-Earth Objects (NEOs). NEOs are celestial objects, such as asteroids and comets, that have orbits that come close to Earth. Understanding NEOs is crucial for planetary defense and scientific research. This project seeks to provide informative visualizations and insights into NEO characteristics, including their orbits, sizes, and close approaches.
+    </p>
+
+    <h2>Tasks</h2>
+    <ul>
+        <li>
+            <h3>Data Preparation</h3>
+            <ul class="list-content">
+                <li>You loaded the NEO dataset and parsed date columns to ensure proper datetime handling.</li>
+                
+            </ul>
+            
+        </li>
+        <li>
+            <h3>Time Series and Scatter Plots:</h3>
+            <ul class="list-content">
+                <li>Create time series graphs and scatter plots to visualize trends in close approach dates, relative velocities, and miss distances.</li>
+                <img class="center-image" src="images\neo2.png" alt="import">
+                <li>These plots help in understanding how these parameters change over time.</li>
+                
+            </ul>
+            
+        </li>
+        <li>
+            <h3>Kernel Density Estimation (KDE) Plots</h3>
+            <ul class="list-content">
+                <li>Generate KDE plots for relative velocities and miss distances to explore their distributions.</li>
+
+                <li>KDE plots provide insights into the probability density of these parameters.</li>
+                <img class="center-image" src="images\kernel1.png" alt="swarm1">
+                <img class="center-image" src="images\kernel2.png" alt="swarm1">
+                <img class="center-image" src="images\kernel3.png" alt="swarm1">
+            </ul>
+            
+        </li>
+        <li>
+            <h3>Analysis of Relative Velocities:</h3>
+            
+            <ul class="list-content">
+                <li>Calculate the summary statistics for relative velocities, including mean and standard deviation.</li>
+                <li>Identified the average relative velocities in different units (km/s, km/h, miles/h) and their variability.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Analysis of Miss Distances</h3>
+            <ul class="list-content">
+                <li>Similar to relative velocities, you computed summary statistics for miss distances (AU, lunar, km, and miles).</li>
+                <li>Highlighted the average miss distances and their variability.</li>
+                
+            </ul>
+        </li>
+        <li>
+            <h3>More Exploration and Insights:</h3>
+            <ul class="list-content">
+                <li>Exploring the data by examining object orbits, historical vs. forecast data, and yearly observations.</li>
+                <li>Noticed that not all objects have observations for every year.</li>
+            </ul>
+            
+        </li>
+        <li>
+            <h3>Danger Assessment</h3>
+            <ul class="list-content">
+                <li> Identified objects that are potentially hazardous based on the dataset.</li>
+                
+                <li>Visualized the distribution of hazardous and non-hazardous objects.</li>
+            </ul>
+        </li>
+        <li>
+            <h3>Correlation Analysis</h3>
+            <ul class="list-content">
+                <li>Calculated and displayed correlation coefficients between close approach dates, relative velocities, and miss distances.</li>
+                <li>Visualized correlations using a heatmap.</li>
+            </ul>
+            
+        </li>
+        <li>
+            <h3>Principal Component Analysis (PCA)</h3>
+            <ul class="list-content">
+                <li>Performs PCA to reduce the dimensionality of the dataset.</li>
+                <li>Visualizes the PCA results with pair plots.</li>
+            </ul>
+            <img class="center-image" src="images\pca.png" alt="pCA">
+            <img class="center-image" src="images\multi.png" alt="MULTI">
+            
+            
+        </li>
+    </ul>
+
+    <h2>Project Outcome</h2>
+    <p>
+        This project provides a comprehensive analysis of your NEO dataset, helping you gain insights into the characteristics and behavior of Near-Earth Objects during close approaches. It explores various aspects of the data,
+         including their velocities, miss distances, and potential hazards.
+    </p>
+
+    
+        View the code on GoogleColab: 
+        <a href="https://colab.research.google.com/drive/1k9aPI1-INZvNbprOM_cjNYYN2w9r2Sq7#scrollTo=O2u4EAj8I5LE" target="_blank" rel="noopener noreferrer">NEO Visualization Data Analysis Project</a>
+    </p>
+</body>
+</html>
 
